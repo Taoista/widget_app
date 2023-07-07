@@ -4,6 +4,7 @@ import 'package:widgets_app/config/theme/menu/menu_items.dart';
 import 'package:widgets_app/presentation/screens/buttons/buttons_screen.dart';
 
 class HomeScreen extends StatelessWidget {
+  static const String name = "home_screen";
   const HomeScreen({super.key});
 
   @override
@@ -54,6 +55,7 @@ class _CustomListTile extends StatelessWidget {
         // ),
         // Navigator.pushNamed(context, menuItem.link)
         context.push(menuItem.link)
+        // context.pushNamed(menuItem.link)
       },
     );
   }
